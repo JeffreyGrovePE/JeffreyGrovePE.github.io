@@ -107,6 +107,28 @@
             color: #1a3a5c;
         }
 
+        .practice-box {
+            background: #fff8dc;
+            border-left: 4px solid #d4a000;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+
+        .practice-box ul {
+            margin: 15px 0 15px 20px;
+            line-height: 1.8;
+        }
+
+        .practice-box p {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .practice-box p:last-child {
+            margin-bottom: 0;
+        }
+
         .links-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -228,6 +250,17 @@
                 <strong>📍 Location:</strong> Southeast Raleigh High School
             </div>
 
+            <div class="practice-box">
+                <p><strong>🏃 Practice Dates</strong> <em>(Dates could change)</em></p>
+                <ul>
+                    <li>February 18th</li>
+                    <li>February 26th</li>
+                    <li>March 4th</li>
+                </ul>
+                <p>Bring your student to the bus loop from 8:00am-8:10am. Knock on the side door window, and I will let your child in. Parents do not need to stay. If your child rides a bus, they can eat breakfast or come straight to the gym when their bus arrives on campus.</p>
+                <p><em>Siblings are welcome 5th through 2nd grade.</em></p>
+            </div>
+
             <h2>📋 Required Documents</h2>
             <p>Please complete the following to confirm your student's participation:</p>
 
@@ -264,57 +297,53 @@
     </div>
 
     <script>
-        // STUDENT DATABASE - Update this with final roster after retesting
+        // STUDENT DATABASE - Updated January 31, 2026
         const students = {
             // 5TH GRADE
-            'otis-quinones': { name: 'Otis Quinones', event: 'Long Jump' },
             'walker-flynn': { name: 'Walker Flynn', event: 'Mile' },
-            'aiden-wilson': { name: 'Aiden Wilson', event: 'Shuttle Run' },
-            'warren-tyson': { name: 'Warren Tyson', event: '100 Yard Dash' },
-            'fernando-bracho': { name: 'Fernando Bracho', event: '100 Yard Dash' },
-            'chris-garcia': { name: 'Chris Garcia', event: 'Pull Ups' },
-            'waylon-frisch': { name: 'Waylon Frisch', event: 'Speed Rope' },
             'clara-ellis': { name: 'Clara Ellis', event: 'Mile' },
+            'warren-tyson': { name: 'Warren Tyson', event: '100 Yard Dash' },
             'ava-anah': { name: 'Ava Anah', event: '100 Yard Dash' },
-            'maddie-tatka': { name: 'Maddie Tatka', event: 'Pull Ups' },
+            'evren-negus': { name: 'Evren Negus', event: 'Long Jump' },
+            'amazin-moore': { name: 'Amazin Moore', event: 'Long Jump' },
+            'aiden-wilson': { name: 'Aiden Wilson', event: 'Shuttle Run' },
+            'grace-caffrey': { name: 'Grace Caffrey', event: 'Shuttle Run' },
+            'waylon-frisch': { name: 'Waylon Frisch', event: 'Speed Rope' },
             'asly-pacheco': { name: 'Asly Pacheco', event: 'Speed Rope' },
-            'jyonna-rogers': { name: "Jy'onna Rogers", event: 'Long Jump' },
-            'sabrina-white': { name: 'Sabrina White', event: 'Long Jump' },
+            'chris-garcia': { name: 'Chris Garcia', event: 'Pull Ups' },
+            'adelyn-vanderbilt': { name: 'Adelyn Vanderbilt', event: 'Pull Ups' },
             
             // 4TH GRADE
             'jose-velazquez': { name: 'Jose Antonio Velazquez', event: 'Mile' },
-            'rowan-johnson': { name: 'Rowan Johnson', event: 'Pull Ups' },
-            'ryder-wingate': { name: 'Ryder Wingate', event: '100 Yard Dash' },
-            'edward-schenk': { name: 'Edward Schenk', event: 'Shuttle Run' },
-            'barrett-brown': { name: 'Barrett Brown', event: 'Speed Rope' },
-            'miles-lee': { name: 'Miles Lee', event: 'Long Jump' },
-            'leo-liu': { name: 'Leo Liu', event: 'Long Jump' },
             'samantha-brown': { name: 'Samantha Brown', event: 'Mile' },
-            'sloane-fishel': { name: 'Sloane Fishel', event: '100 Yard Dash' },
-            'ayla-lyteson': { name: 'Ayla Lyteson', event: 'Pull Ups' },
-            'lennox-hawkins': { name: 'Lennox Hawkins', event: 'Shuttle Run' },
-            'ellarae-cooper': { name: 'EllaRae Cooper', event: 'Long Jump' },
-            'victoria-ysabel': { name: 'Victoria Ysabel', event: 'Long Jump' },
+            'lucas-erhart': { name: 'Lucas Erhart', event: '100 Yard Dash' },
+            'sibyl-dauchert': { name: 'Sibyl Dauchert', event: '100 Yard Dash' },
+            'ryder-wingate': { name: 'Ryder Wingate', event: 'Long Jump' },
+            'edward-schenk': { name: 'Edward Schenk', event: 'Shuttle Run' },
+            'leah-reis': { name: 'Leah Reis', event: 'Shuttle Run' },
+            'barrett-brown': { name: 'Barrett Brown', event: 'Speed Rope' },
+            'ayla-lyteson': { name: 'Ayla Lyteson', event: 'Speed Rope' },
+            'rowan-johnson': { name: 'Rowan Johnson', event: 'Pull Ups' },
             
             // 3RD GRADE
             'noah-wilson': { name: 'Noah Wilson', event: 'Mile' },
-            'caleb-robinson': { name: 'Caleb Robinson', event: '100 Yard Dash' },
-            'beckett-boone': { name: 'Beckett Boone', event: 'Pull Ups' },
-            'luke-oconnell': { name: "Luke O'Connell", event: 'Speed Rope' },
             'sunny-bennett': { name: 'Sunny Bennett', event: 'Mile' },
+            'caleb-robinson': { name: 'Caleb Robinson', event: '100 Yard Dash' },
             'madelyn-shea': { name: 'Madelyn Shea', event: '100 Yard Dash' },
-            'madilynn-stephens': { name: 'Madilynn Stephens', event: 'Shuttle Run' },
-            'lillian-sauls': { name: 'Lillian Sauls', event: 'Pull Ups' },
-            'sloan-howarth': { name: 'Sloan Howarth', event: 'Speed Rope' },
-            'ameena-williams': { name: 'Ameena Williams', event: 'Long Jump' },
-            'nathan-edge': { name: 'Nathan Edge', event: 'Long Jump' },
+            'william-benjamin': { name: 'William Benjamin', event: 'Long Jump' },
+            'amani-gray': { name: 'Amani Gray', event: 'Long Jump' },
+            'oscar-beauchamp': { name: 'Oscar Beauchamp', event: 'Shuttle Run' },
+            'braelyn-stephens': { name: 'Braelyn Stephens', event: 'Shuttle Run' },
+            'luke-oconnell': { name: "Luke O'Connell", event: 'Speed Rope' },
+            'eliana-harris': { name: 'Eliana Harris', event: 'Speed Rope' },
+            'claudio-campos': { name: 'Claudio Campos', event: 'Pull Ups' },
             
             // 2ND GRADE
             'levi-parker': { name: 'Levi Parker', event: 'Mile' },
-            'aidan-widman': { name: 'Aidan Widman', event: 'Mile' },
-            'cooper-flammia': { name: 'Cooper Flammia', event: '100 Yard Dash' },
             'fiona-egalite': { name: 'Fiona Egalite', event: 'Mile' },
+            'cooper-flammia': { name: 'Cooper Flammia', event: '100 Yard Dash' },
             'rae-rappold': { name: 'Rae Rappold', event: '100 Yard Dash' },
+            'leonel-velazquez': { name: 'Leonel Velazquez', event: 'Shuttle Run' },
         };
 
         // Get student code from URL parameter
