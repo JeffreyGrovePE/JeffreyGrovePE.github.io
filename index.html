@@ -297,7 +297,7 @@
     </div>
 
     <script>
-        // STUDENT DATABASE - Updated January 31, 2026
+        // STUDENT DATABASE - Updated February 1, 2026
         const students = {
             // 5TH GRADE
             'walker-flynn': { name: 'Walker Flynn', event: 'Mile' },
@@ -307,74 +307,4 @@
             'evren-negus': { name: 'Evren Negus', event: 'Long Jump' },
             'amazin-moore': { name: 'Amazin Moore', event: 'Long Jump' },
             'aiden-wilson': { name: 'Aiden Wilson', event: 'Shuttle Run' },
-            'grace-caffrey': { name: 'Grace Caffrey', event: 'Shuttle Run' },
-            'waylon-frisch': { name: 'Waylon Frisch', event: 'Speed Rope' },
-            'asly-pacheco': { name: 'Asly Pacheco', event: 'Speed Rope' },
-            'chris-garcia': { name: 'Chris Garcia', event: 'Pull Ups' },
-            'adelyn-vanderbilt': { name: 'Adelyn Vanderbilt', event: 'Pull Ups' },
-            
-            // 4TH GRADE
-            'jose-velazquez': { name: 'Jose Antonio Velazquez', event: 'Mile' },
-            'samantha-brown': { name: 'Samantha Brown', event: 'Mile' },
-            'lucas-erhart': { name: 'Lucas Erhart', event: '100 Yard Dash' },
-            'sibyl-dauchert': { name: 'Sibyl Dauchert', event: '100 Yard Dash' },
-            'ryder-wingate': { name: 'Ryder Wingate', event: 'Long Jump' },
-            'edward-schenk': { name: 'Edward Schenk', event: 'Shuttle Run' },
-            'leah-reis': { name: 'Leah Reis', event: 'Shuttle Run' },
-            'barrett-brown': { name: 'Barrett Brown', event: 'Speed Rope' },
-            'ayla-lyteson': { name: 'Ayla Lyteson', event: 'Speed Rope' },
-            'rowan-johnson': { name: 'Rowan Johnson', event: 'Pull Ups' },
-            
-            // 3RD GRADE
-            'noah-wilson': { name: 'Noah Wilson', event: 'Mile' },
-            'sunny-bennett': { name: 'Sunny Bennett', event: 'Mile' },
-            'caleb-robinson': { name: 'Caleb Robinson', event: '100 Yard Dash' },
-            'madelyn-shea': { name: 'Madelyn Shea', event: '100 Yard Dash' },
-            'william-benjamin': { name: 'William Benjamin', event: 'Long Jump' },
-            'amani-gray': { name: 'Amani Gray', event: 'Long Jump' },
-            'oscar-beauchamp': { name: 'Oscar Beauchamp', event: 'Shuttle Run' },
-            'braelyn-stephens': { name: 'Braelyn Stephens', event: 'Shuttle Run' },
-            'luke-oconnell': { name: "Luke O'Connell", event: 'Speed Rope' },
-            'eliana-harris': { name: 'Eliana Harris', event: 'Speed Rope' },
-            'claudio-campos': { name: 'Claudio Campos', event: 'Pull Ups' },
-            
-            // 2ND GRADE
-            'levi-parker': { name: 'Levi Parker', event: 'Mile' },
-            'fiona-egalite': { name: 'Fiona Egalite', event: 'Mile' },
-            'cooper-flammia': { name: 'Cooper Flammia', event: '100 Yard Dash' },
-            'rae-rappold': { name: 'Rae Rappold', event: '100 Yard Dash' },
-            'leonel-velazquez': { name: 'Leonel Velazquez', event: 'Shuttle Run' },
-        };
-
-        // Get student code from URL parameter
-        const urlParams = new URLSearchParams(window.location.search);
-        const studentCode = urlParams.get('student');
-
-        // Populate student card
-        const studentCard = document.getElementById('student-card');
-
-        if (studentCode && students[studentCode]) {
-            const student = students[studentCode];
-            studentCard.innerHTML = `
-                <div class="student-name">${student.name}</div>
-                <div class="events-label">Qualified Event</div>
-                <span class="event-badge">${student.event}</span>
-            `;
-        } else if (studentCode) {
-            studentCard.innerHTML = `
-                <div class="error-card">
-                    <h2>Student Not Found</h2>
-                    <p>We couldn't find a student with that code. Please check your link and try again, or contact <a href="mailto:jsmith25@wcpss.net">jsmith25@wcpss.net</a></p>
-                </div>
-            `;
-        } else {
-            studentCard.innerHTML = `
-                <div class="student-name">Your Student's Name</div>
-                <div class="events-label">Qualified Event</div>
-                <span class="event-badge">Event</span>
-                <p class="preview-note">(This is a preview. Each student will see their personalized information.)</p>
-            `;
-        }
-    </script>
-</body>
-</html>
+            'grace-caffrey': { name: 'Grace
